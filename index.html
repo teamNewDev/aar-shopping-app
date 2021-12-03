@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping App</title>
     <link rel="assets" href="./assets/icon-192.png" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="./dexie.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" /> 
+    <link rel="manifest" href="./manifest.json">
+    <script src="./dexie.min.js"></script>  
     <script>
       // Check that service workers are supported
       if ('serviceWorker' in navigator) {
@@ -19,9 +20,9 @@
       </script>
   </head>
   <body>
-    <div class="container">
+    <div class="container">  
       <nav>
-        <h1>My Shopping List</h1>
+        <h1>My Shopping List</h1>   
       </nav>
       <form id="itemForm">
         <label>
