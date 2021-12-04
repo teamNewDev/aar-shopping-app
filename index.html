@@ -14,17 +14,19 @@
       if ('serviceWorker' in navigator) {
         // Use the window load event to keep the page load performant
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('./sw.js');
+          navigator.serviceWorker.register('./sw.js'); 
         });
       }
       </script>
   </head>
   <body>
-    <div class="container">  
-      <nav>
-        <h1>My Shopping List</h1>   
-      </nav>
-      <form id="itemForm">
+    <nav>
+      <h1>My Shopping List</h1>   
+    </nav>
+
+    <div class="container">   
+      
+      <form id="itemForm"> 
         <label>
           Name of Item:
           <input type="text" id="nameInput" required />
@@ -32,7 +34,7 @@
 
         <label>
           Quantity:
-          <input type="number" id="quantityInput" value="1" />
+          <input type="number" id="quantityInput" value="1" /> 
         </label>
 
         <label>

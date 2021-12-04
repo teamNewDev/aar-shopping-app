@@ -5,6 +5,7 @@ console.log("good");
 const itemForm = document.getElementById("itemForm");
 const itemsDiv = document.getElementById("itemsDiv");
 const totalPrice = document.getElementById("totalPrice");
+const clearAllItemButton = document.getElementById("clearAllItemButton");
 
 const populateItemsDiv = async () => {
   const allItems = await db.items.reverse().toArray();

@@ -8,6 +8,9 @@ body {
   background: #fff;
   font-family: font-family: 'Spartan', sans-serif;;
 }
+.container {
+  padding: 1rem;
+}
 nav {
   background: #00adb5;
   height: 3rem;
@@ -25,15 +28,25 @@ nav {
   text-align: center;
   border: 1px solid black;
 }
-/* #quantityInput, #priceInput {
-    width: 1rem;
-} */
+#quantityInput, #priceInput {
+    width: 3rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 #addItemsButton {
   border: unset;
   background: #00adb5;
   color: #fff;
-  padding: 0.5rem;
+  padding: 0.7rem;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 7rem;
 }
+
 #itemsDiv {
   margin-top: 3rem;
   margin-bottom: 2rem;
@@ -41,12 +54,12 @@ nav {
 .item {
   display: grid;
   grid-template-columns: 1fr 2fr 3fr;
-  background: lemon;
+  background: rgb(255, 255, 255);
   margin-bottom: 0.5rem;
 }
 .checkbox {
-  height: 70%;
-  width: 1.5rem;
+  height: 100%;
+  width: 2.5rem;
   background: #00fff5;
 }
 .itemInfo {
@@ -59,7 +72,7 @@ nav {
   color: white;
   font-size: 0.8rem;
   width: 2.5rem;
-  height: 70%;
+  height: 100%;
 }
 .deleteBtn:active {
   margin-top: 3px;
